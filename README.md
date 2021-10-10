@@ -1,17 +1,17 @@
 # Basic Sample Hardhat Project
 from https://dev.to/dabit3/the-complete-guide-to-full-stack-ethereum-development-3j13
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, a sample script that deploys that contract, and an example of a task implementation, which simply lists the available accounts.
+building, deploying, and connecting to a couple of basic smart contracts:
 
-Try running some of the following tasks:
+1. A contract for creating and updating a message on the Ethereum blockchain
+2. A contract for minting tokens, then allowing the owner of the contract to send tokens to others and to read the token balances, and for owners of the new tokens to also send them to others.
+
+
+To run the project:
 
 ```shell
-npx hardhat accounts
+npm start
 npx hardhat compile
-npx hardhat clean
-npx hardhat test
 npx hardhat node
-node scripts/deploy.js
 npx hardhat run scripts/deploy --network localhost
-npx hardhat help
 ```
